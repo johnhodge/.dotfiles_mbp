@@ -16,4 +16,3 @@
 #  - [git submodule update --init --recursive, Installing submodules]
   - echo "hey guys"
   - sleep 5
-  - ./test.zsh
