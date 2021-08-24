@@ -1,11 +1,15 @@
-echo 'hello world from .zshrc'
+# Set variables 
 
-# Set variables
+# Syntax highlighting for man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Change ZSH  options
 
+export BAT_CONFIG_PATH="./batconfig
+
 # Create aliases
 alias ls='ls -lAFh'
+alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 
 # Customize prompt(s)
 PROMPT='
