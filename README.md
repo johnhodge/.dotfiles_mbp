@@ -1,7 +1,9 @@
 # dotfiles_mbp
+
 Dotfiles for my MacBook Pro
 
 ## TODO
+
 - Terminal Preferences
 - Changed Shell to ZSH
 - Dock Preferences
@@ -11,3 +13,4 @@ Dotfiles for my MacBook Pro
 - .zshrc
 - Git (config and SSH)
 - Homebrew install
+- Disable the spotlight key combo and use those for alfred instead
