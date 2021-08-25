@@ -13,6 +13,7 @@
     - ~/.vim/undo-history
 
 - shell:
-#  - [git submodule update --init --recursive, Installing submodules]
-  - echo "hey guys"
-  - sleep 5
+    #  - [git submodule update --init --recursive, Installing submodules]
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
