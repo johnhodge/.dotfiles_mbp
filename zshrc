@@ -18,6 +18,7 @@ PROMPT='
 RPROMPT='%*'
 
 # Add locations to $PATH variable
+# Add Visual Studio Code (code)
 
 # Write handy functions
 function mkcd() {
