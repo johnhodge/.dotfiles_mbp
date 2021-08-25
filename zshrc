@@ -1,11 +1,14 @@
-echo 'hello world from .zshrc'
-
 # Set variables
 
-# Change ZSH  options
+# Syntax highlighting for man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
+# Change ZSH  optionsg
 
 # Create aliases
-alias ls='ls -lAFh'
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
 
 # Customize prompt(s)
 PROMPT='
@@ -14,6 +17,8 @@ PROMPT='
 RPROMPT='%*'
 
 # Add locations to $PATH variable
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Write handy functions
 function mkcd() {
@@ -21,5 +26,4 @@ mkdir -p "$@" && cd "$_";
 }
 
 # Use ZSH plugins
-
 # ...and other surprises
