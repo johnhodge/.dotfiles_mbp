@@ -1,15 +1,12 @@
-# Set variables 
+# Set variables
 
 # Syntax highlighting for man pages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-# Change ZSH  options
-
-export BAT_CONFIG_PATH="./batconfig
+# Change ZSH  optionsg
 
 # Create aliases
 alias ls='ls -lAFh'
-alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 
 # Customize prompt(s)
 PROMPT='
@@ -19,6 +16,7 @@ RPROMPT='%*'
 
 # Add locations to $PATH variable
 # Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Write handy functions
 function mkcd() {
@@ -26,5 +24,4 @@ mkdir -p "$@" && cd "$_";
 }
 
 # Use ZSH plugins
-
 # ...and other surprises
