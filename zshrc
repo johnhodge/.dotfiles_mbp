@@ -1,7 +1,7 @@
 # Set variables
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
-# Change ZSH  optionsg
+# Change ZSH  options
 
 # Create aliases
 alias ls='exa -laFh --git'
