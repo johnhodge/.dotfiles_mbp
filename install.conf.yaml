@@ -6,7 +6,11 @@
 
 - link:
     ~/.zshrc:
+    ~/.zshenv:
     ~/.gitconfig:
+    ~/.config:
+      create: true
+      path: config
 
 - create:
     - ~/downloads
