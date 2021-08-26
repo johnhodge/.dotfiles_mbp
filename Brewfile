@@ -24,6 +24,8 @@ brew "netlify-cli"
 brew "yarn"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+# Collection of apps and services for photography, design, video, web, and UX
+cask "adobe-creative-cloud"
 # Application launcher and productivity software
 cask "alfred"
 # Web debugging Proxy application
