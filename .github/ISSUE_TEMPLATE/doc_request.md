@@ -1,9 +1,9 @@
 ---
 name: Doc Request
 about: Create a doc request of a specific document that needs to be created or updated.
-title: "docs: [Describe document here]"
-labels: "docs"
-assignees: "johnhodge"
+title: 'docs: [Describe document here]'
+labels: 'docs'
+assignees: 'johnhodge'
 ---
 
 # Doc Request
@@ -18,7 +18,6 @@ assignees: "johnhodge"
 **What feature or concept needs to be addressed in document requested?**
 
 **Are you willing to create a first draft of these docs?**
-
 Yes.
 
 **Other relevant information:**

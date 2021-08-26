@@ -1,9 +1,9 @@
 ---
 name: Feature Request
 about: Create a feat request of a specific feature that needs to be added.
-title: "feat: [Describe feature here]"
-labels: "feat"
-assignees: ""
+title: 'feat: [Describe feature here]'
+labels: 'feat'
+assignees: ''
 ---
 
 # Feature Request
@@ -15,5 +15,4 @@ assignees: ""
 **How should this be implemented in your opinion?**
 
 **Are you willing to work on this yourself?**
-
 Yes

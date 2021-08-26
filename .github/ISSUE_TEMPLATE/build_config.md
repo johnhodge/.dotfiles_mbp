@@ -1,9 +1,9 @@
 ---
 name: Build Config
 about: Create a build config of a specific build spec that needs to be added.
-title: "build: [Describe build here]"
-labels: "build"
-assignees: ""
+title: 'build: [Describe build here]'
+labels: 'build'
+assignees: ''
 ---
 
 # Build Config
@@ -15,5 +15,4 @@ assignees: ""
 **How should this be implemented in your opinion?**
 
 **Are you willing to work on this yourself?**
-
 Yes
