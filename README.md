@@ -1,3 +1,11 @@
-# dotfiles_mbp
+# dotfiles_mbp 💻
 
-Dotfiles for my Mac.
+Install everything, and set up all the system preferences soon too.
+
+## Install
+
+```
+cd .dotfiles && ./install
+```
+
+All set 🚀
