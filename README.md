@@ -1,16 +1,11 @@
-# dotfiles_mbp
+# dotfiles_mbp 💻
 
-Dotfiles for my MacBook Pro
+Install everything, and set up all the system preferences soon too.
 
-## TODO
+## Install
 
-- Terminal Preferences
-- Changed Shell to ZSH
-- Dock Preferences
-- Mission Control Preference (don't rearrange spaces)
-- Finder Show Path Bar
-- Trackpad (Three Finger Drag and Tap to Click)
-- .zshrc
-- Git (config and SSH)
-- Homebrew install
-- Disable the spotlight key combo and use those for alfred instead
+```
+cd .dotfiles && ./install
+```
+
+All set 🚀
