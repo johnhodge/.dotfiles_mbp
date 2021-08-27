@@ -1,2 +1,7 @@
 *.lock.json
+
+# Config files
+config/gatsby*
+
+# Mac files
 .DS_Store
