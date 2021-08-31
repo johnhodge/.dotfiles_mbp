@@ -24,6 +24,8 @@ brew "nano"
 brew "netlify-cli"
 # JavaScript package manager
 brew "yarn"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
 # Collection of apps and services for photography, design, video, web, and UX
