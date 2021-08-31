@@ -1,5 +1,6 @@
 # Set variables
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
 
 # Change ZSH  options
 
