@@ -10,6 +10,8 @@ brew "contentful-cli"
 brew "exa"
 # Gatsby command-line interface
 brew "gatsby-cli"
+# GitHub command-line tool
+brew "gh"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
