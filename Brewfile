@@ -10,6 +10,8 @@ brew "contentful-cli"
 brew "exa"
 # Gatsby command-line interface
 brew "gatsby-cli"
+# GitHub command-line tool
+brew "gh"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
@@ -22,6 +24,8 @@ brew "nano"
 brew "netlify-cli"
 # JavaScript package manager
 brew "yarn"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
 # Collection of apps and services for photography, design, video, web, and UX
@@ -30,6 +34,8 @@ cask "adobe-creative-cloud"
 cask "alfred"
 # Web debugging Proxy application
 cask "charles"
+# Voice and text chat software
+cask "discord"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser
