@@ -4,6 +4,10 @@
 		"enabled": true
 	},
 	"feedback": {
-		"firstCheckDate": 1630173346512
+		"firstCheckDate": 1630173346512,
+		"sevenDayFeedbackDate": 1630782840550
+	},
+	"cli": {
+		"packageManager": "npm"
 	}
 }

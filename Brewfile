@@ -34,6 +34,8 @@ cask "adobe-creative-cloud"
 cask "alfred"
 # Web debugging Proxy application
 cask "charles"
+# Voice and text chat software
+cask "discord"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser
