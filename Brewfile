@@ -4,6 +4,8 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Platform built on V8 to build network applications
+brew "node"
 # Contentful command-line tools
 brew "contentful-cli"
 # Modern replacement for 'ls'
@@ -18,10 +20,14 @@ brew "httpie"
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# Open source relational database management system
+brew "mysql"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Netlify command-line tool
 brew "netlify-cli"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
@@ -32,6 +38,8 @@ brew "eth-p/software/bat-extras"
 cask "adobe-creative-cloud"
 # Application launcher and productivity software
 cask "alfred"
+# Two-factor authentication software
+cask "authy"
 # Web debugging Proxy application
 cask "charles"
 # Voice and text chat software
