@@ -5,7 +5,7 @@ Install everything, and set up all the system preferences soon too.
 ## Install
 
 ```zsh
-gh repo clone johnhodge/dotfiles_mbp && cd .dotfiles && ./install
+gh repo clone johnhodge/dotfiles_mbp && cd .dotfiles_mbp && ./install
 ```
 
 ## Manual steps
