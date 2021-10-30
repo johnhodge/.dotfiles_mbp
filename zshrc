@@ -16,12 +16,12 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
 COLOR_DEF='%f'
-COLOR_DIR='%F{214}'
-COLOR_GIT='%F{39}'
+COLOR_DIR='%F{216}'
+COLOR_LVL='%F{6}'
+COLOR_GIT='%F{75}'
 COLOR_SYMBOL='%F{87}'
 setopt PROMPT_SUBST
-export PROMPT='${COLOR_DIR}%1~ ${COLOR_GIT}$(parse_git_branch)$ ${COLOR_SYMBOL}~ ${COLOR_DEF}% '
-# PROMPT='%1~ %L %# '
+export PROMPT='${COLOR_DIR}%1~ ${COLOR_LVL}%L %B${COLOR_GIT}$(parse_git_branch)%b ${COLOR_SYMBOL}» ${COLOR_DEF}% '
 
 RPROMPT='%*'
 
