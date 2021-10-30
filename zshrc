@@ -12,8 +12,16 @@ alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
 
 # Customize prompt(s)
-PROMPT='
-%1~ %L  %# '
+parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+COLOR_DEF='%f'
+COLOR_DIR='%F{214}'
+COLOR_GIT='%F{39}'
+COLOR_SYMBOL='%F{87}'
+setopt PROMPT_SUBST
+export PROMPT='${COLOR_DIR}%1~ ${COLOR_GIT}$(parse_git_branch)$ ${COLOR_SYMBOL}~ ${COLOR_DEF}% '
+# PROMPT='%1~ %L %# '
 
 RPROMPT='%*'
 
