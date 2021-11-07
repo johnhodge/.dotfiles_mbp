@@ -1,13 +1,14 @@
 # dotfiles_mbp 💻
 
-Install everything, and set up all the system preferences soon too.
+Set up script for my MBP.
 
 ## Install
 
 ```zsh
-gh repo clone johnhodge/dotfiles_mbp && cd .dotfiles_mbp && ./install
+git clone https://github.com/johnhodge/.dotfiles_mbp.git && cd .dotfiles_mbp && ./install
 ```
 
 ## Manual steps
 
+- Set macOS settings to dark mode
 - Install synology drive client
