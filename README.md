@@ -1,6 +1,6 @@
 # dotfiles_mbp 💻
 
-Set up script for my MBP.
+Setup script for my MBP.
 
 ## Install
 
