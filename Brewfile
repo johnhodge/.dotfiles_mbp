@@ -26,6 +26,8 @@ brew "mysql"
 brew "nano"
 # Netlify command-line tool
 brew "netlify-cli"
+# HTTP/2 C Library
+brew "nghttp2"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # JavaScript package manager
@@ -34,10 +36,14 @@ brew "yarn"
 brew "zsh"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+# Sound and music editor
+cask "ableton-live-suite"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
 # Application launcher and productivity software
 cask "alfred"
+# Manage team projects and tasks
+cask "asana"
 # Two-factor authentication software
 cask "authy"
 # Web debugging Proxy application
