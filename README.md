@@ -10,5 +10,8 @@ git clone https://github.com/johnhodge/.dotfiles_mbp.git && cd .dotfiles_mbp && 
 
 ## Manual steps
 
-- Set macOS settings to dark mode
+- Set macOS color mode
+- Turn off Spotlight shortcut
+- Load in Alfred settings
 - Install synology drive client
+- Install fonts

@@ -6,8 +6,11 @@ echo "\n<<< Starting macOS setup >>>\n"
 # Main
 # ====
 
+# Set default browser to chrome
+open -a "Google Chrome" --args --make-default-browser
+
 # Show battery life percentage.
-# defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
@@ -176,6 +179,9 @@ chflags nohidden ~/Library
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Move dock to left
+defaults write com.apple.dock orientation left
+
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 
@@ -188,6 +194,12 @@ defaults write com.apple.dock tilesize -int 36
 # Show only open applications in the Dock
 defaults write com.apple.dock static-only -bool true
 
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
 
@@ -199,12 +211,6 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
-
-# Don’t show recent applications in Dock
-defaults write com.apple.dock show-recents -bool false
-
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
 
 # Add iOS & Watch Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
