@@ -182,6 +182,9 @@ chflags nohidden ~/Library
 # Move dock to left
 defaults write com.apple.dock orientation left
 
+# Enable App Expose swipe down interaction
+defaults write com.apple.dock showAppExposeGestureEnabled  -int 1
+
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 
