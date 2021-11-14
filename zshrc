@@ -12,16 +12,42 @@ alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
 
 # Customize prompt(s)
-parse_git_branch() {
-    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
-}
+
 COLOR_DEF='%f'
 COLOR_DIR='%F{216}'
 COLOR_LVL='%F{6}'
 COLOR_GIT='%F{75}'
 COLOR_SYMBOL='%F{87}'
 setopt PROMPT_SUBST
-export PROMPT='${COLOR_DIR}%1~ ${COLOR_LVL}%L %B${COLOR_GIT}$(parse_git_branch)%b ${COLOR_SYMBOL}» ${COLOR_DEF}% '
+
+prompt_dir() {
+    echo $COLOR_DIR%c ' '
+}
+
+prompt_lvl(){
+    echo $COLOR_LVL%L ' '
+}
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+
+prompt_git() {
+    git check-ignore -q . 2>/dev/null; if [ "$?" -ne "1" ]; then
+        echo ''
+    else echo $COLOR_GIT%B$(parse_git_branch) %b
+    fi
+}
+
+prompt_symbol() {
+    echo %B$COLOR_SYMBOL→%b $COLOR_DEF% 
+}
+
+build_prompt() {
+    echo $(prompt_dir)$(prompt_lvl)$(prompt_git)$(prompt_symbol)
+}
+
+export PROMPT='$(build_prompt)'
 
 RPROMPT='%*'
 
