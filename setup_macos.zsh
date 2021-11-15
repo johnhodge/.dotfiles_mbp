@@ -9,9 +9,6 @@ echo "\n<<< Starting macOS setup >>>\n"
 # Set default browser to chrome
 open -a "Google Chrome" --args --make-default-browser
 
-# Show battery life percentage.
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
@@ -176,7 +173,7 @@ defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 chflags nohidden ~/Library
 
 ###############################################################################
-# Dock, Dashboard, and hot corners                                            #
+# Dock, Menu Bar, Dashboard, and hot corners                                            #
 ###############################################################################
 
 # Move dock to left
@@ -205,6 +202,16 @@ defaults write com.apple.dock autohide -bool true
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
+
+# Group Mission Control windows by app
+defaults write com.apple.dock expose-group-apps -int 1
+
+# Show seconds on clock
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  h:mm:ss a" 
+defaults write com.apple.menuextra.clock ShowSeconds -int 1
+
+# Show battery life percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
