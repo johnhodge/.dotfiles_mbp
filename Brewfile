@@ -36,6 +36,8 @@ brew "yarn"
 brew "zsh"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Sound and music editor
 cask "ableton-live-suite"
 # Collection of apps and services for photography, design, video, web, and UX
