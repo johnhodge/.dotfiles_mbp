@@ -12,6 +12,6 @@ git clone https://github.com/johnhodge/.dotfiles_mbp.git && cd .dotfiles_mbp && 
 
 - Set macOS color mode
 - Turn off Spotlight shortcut
-- Load in Alfred settings
 - Install synology drive client
+- Configure Alfred
 - Install fonts
