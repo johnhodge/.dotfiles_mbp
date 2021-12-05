@@ -176,7 +176,7 @@ defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 chflags nohidden ~/Library
 
 ###############################################################################
-# Dock, Menu Bar, Dashboard, and hot corners                                            #
+# Dock, Menu Bar, Dashboard, and hot corners                                  #
 ###############################################################################
 
 # Move dock to left
