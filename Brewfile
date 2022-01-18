@@ -59,12 +59,15 @@ cask "google-trends"
 cask "iterm2"
 # Collaboration platform for API development
 cask "postman"
+# Archive manager for data compression and backups
+cask "rar"
 # Team communication and collaboration software
 cask "slack"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "HP Smart", id: 1474276998
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
