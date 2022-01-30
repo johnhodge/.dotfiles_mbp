@@ -24,18 +24,26 @@ prompt_dir() {
     echo $COLOR_DIR%c ' '
 }
 
-prompt_lvl(){
+prompt_lvl() {
     echo $COLOR_LVL%L ' '
 }
 
-parse_git_branch() {
-    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+git_branch_name() {
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo '- ('$branch')'
+  fi
 }
 
 prompt_git() {
-    git check-ignore -q . 2>/dev/null; if [ "$?" -ne "1" ]; then
-        echo ''
-    else echo $COLOR_GIT%B$(parse_git_branch) %b
+    branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+    if [[ $branch == "" ]];
+        then
+        :
+    else echo $COLOR_GIT%B"[$branch]" %b
     fi
 }
 
