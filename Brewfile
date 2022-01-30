@@ -30,6 +30,8 @@ brew "netlify-cli"
 brew "nghttp2"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
@@ -48,6 +50,8 @@ cask "asana"
 cask "authy"
 # Web debugging Proxy application
 cask "charles"
+# Automated testing of webapps for Google Chrome
+cask "chromedriver"
 # Voice and text chat software
 cask "discord"
 # Git client focusing on productivity
@@ -57,6 +61,7 @@ cask "google-chrome"
 cask "google-trends"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+cask "phantomjs"
 # Collaboration platform for API development
 cask "postman"
 # Archive manager for data compression and backups
@@ -67,7 +72,6 @@ cask "slack"
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "HP Smart", id: 1474276998
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
