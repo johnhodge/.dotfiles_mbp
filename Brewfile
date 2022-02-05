@@ -14,6 +14,10 @@ brew "exa"
 brew "gatsby-cli"
 # GitHub command-line tool
 brew "gh"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
@@ -28,6 +32,8 @@ brew "nano"
 brew "netlify-cli"
 # HTTP/2 C Library
 brew "nghttp2"
+# Object-relational database system
+brew "postgresql"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # Interpreted, interactive, object-oriented programming language
@@ -61,7 +67,6 @@ cask "google-chrome"
 cask "google-trends"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-cask "phantomjs"
 # Collaboration platform for API development
 cask "postman"
 # Archive manager for data compression and backups
