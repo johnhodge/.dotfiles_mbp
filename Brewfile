@@ -2,6 +2,7 @@ tap "eth-p/software"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/services"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Platform built on V8 to build network applications
@@ -33,7 +34,7 @@ brew "netlify-cli"
 # HTTP/2 C Library
 brew "nghttp2"
 # Object-relational database system
-brew "postgresql"
+brew "postgresql", restart_service: true
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # Interpreted, interactive, object-oriented programming language
@@ -67,6 +68,8 @@ cask "google-chrome"
 cask "google-trends"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Administration and development platform for PostgreSQL
+cask "pgadmin4"
 # Collaboration platform for API development
 cask "postman"
 # Archive manager for data compression and backups
