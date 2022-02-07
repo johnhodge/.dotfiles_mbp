@@ -95,13 +95,13 @@ inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
     echo "Creating repo..."
     if [ "$1" != "" ]
         then
-            gh repo create 
-            echo "Generating .gitignore template for macos,$1." 
-            gi macos,"$1" >> .gitignore 
+            gh repo create --source=. --private
+            echo "Generating .gitignore template for visualstudiocode,macos,$1." 
+            gi visualstudiocode,macos,"$1" >> .gitignore 
         else
-            gh repo create 
-            echo "Generating .gitignore template for macos." 
-            gi macos >> .gitignore  
+            gh repo create --source=. --private
+            echo "Generating .gitignore template for visualstudiocode,macos." 
+            gi visualstudiocode,macos >> .gitignore  
     fi
 }
 
