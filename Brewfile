@@ -9,6 +9,8 @@ brew "bat"
 brew "node"
 # Contentful command-line tools
 brew "contentful-cli"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Modern replacement for 'ls'
 brew "exa"
 # Gatsby command-line interface
@@ -65,11 +67,14 @@ cask "discord"
 cask "gitkraken"
 # Web browser
 cask "google-chrome"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
 cask "google-trends"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
+cask "phantomjs"
 # Collaboration platform for API development
 cask "postman"
 # Archive manager for data compression and backups
@@ -80,7 +85,6 @@ cask "slack"
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
