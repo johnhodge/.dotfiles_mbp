@@ -3,6 +3,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
 
 # Change ZSH  options
+# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 # Create aliases
 alias ls='exa -laFh --git'
@@ -14,7 +15,6 @@ alias python="python3"
 alias pip="pip3"
 
 # Customize prompt(s)
-
 COLOR_DEF='%f'
 COLOR_DIR='%F{216}'
 COLOR_LVL='%F{6}'
@@ -71,6 +71,9 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
+# Add Madhive protos
+export PATH=$PATH:$GOPATH/src/github.com/MadHive/taco/protos
+
 # Functions
 # Make directory and navigate inside it
 function mkcd() {
@@ -118,7 +121,9 @@ function gitall() {
 }
 
 # Use ZSH plugins
-# ...and other surprises
+plugins=(autopep8,brew,dotenv,gatsby,gcloud,gh)
+
+# Add NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
