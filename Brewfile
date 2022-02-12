@@ -74,7 +74,6 @@ cask "google-trends"
 cask "iterm2"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
-cask "phantomjs"
 # Collaboration platform for API development
 cask "postman"
 # Archive manager for data compression and backups
