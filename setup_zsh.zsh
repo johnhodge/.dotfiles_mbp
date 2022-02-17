@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-echo "\n<<< Starting zsh setup >>>\n"
+echo "\n############\nStarting zsh setup\n############\n"
 
 # https://stackoverflow.com/a/4749368/1341838
 if grep -Fxq '/usr/local/bin/zsh' '/etc/shells'; then

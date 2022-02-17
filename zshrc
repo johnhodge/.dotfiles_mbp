@@ -68,8 +68,8 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # Add GoLang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
 
 # Add Madhive protos
 export PATH=$PATH:$GOPATH/src/github.com/MadHive/taco/protos

@@ -19,6 +19,8 @@ brew "gatsby-cli"
 brew "gh"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Gorgeous metric visualizations and dashboards for timeseries databases
+brew "grafana"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -74,7 +76,6 @@ cask "google-trends"
 cask "iterm2"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
-cask "phantomjs"
 # Collaboration platform for API development
 cask "postman"
 # Archive manager for data compression and backups
@@ -85,6 +86,7 @@ cask "slack"
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816

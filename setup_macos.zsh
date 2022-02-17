@@ -1,4 +1,4 @@
-echo "\n<<< Starting macOS setup >>>\n"
+echo "\n############\nStarting macOS setup\n############\n"
 
 # Some stuff was taken from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
