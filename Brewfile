@@ -11,6 +11,8 @@ brew "node"
 brew "contentful-cli"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Modern replacement for 'ls'
 brew "exa"
 # Gatsby command-line interface
@@ -20,7 +22,7 @@ brew "gh"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Gorgeous metric visualizations and dashboards for timeseries databases
-brew "grafana"
+brew "grafana", restart_service: true
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -41,8 +43,6 @@ brew "nghttp2"
 brew "postgresql", restart_service: true
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
@@ -63,10 +63,6 @@ cask "authy"
 cask "charles"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
-# Voice and text chat software
-cask "discord"
-# Git client focusing on productivity
-cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
