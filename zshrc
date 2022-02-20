@@ -11,8 +11,8 @@ alias exa='exa -laFh --git'
 alias man='batman'
 alias bbd='brew bundle dump --force --all --verbose --describe'
 alias trail='<<<${(F)path}'
-alias python="python3"
-alias pip="pip3"
+alias python='python3'
+alias pip='pip3'
 
 # Customize prompt(s)
 COLOR_DEF='%f'
