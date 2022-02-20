@@ -80,6 +80,11 @@ function mkcd() {
     mkdir -p "$@" && cd "$_";
 }
 
+# Make file and navigate to it
+function to() {
+    touch "$@" && open "$_";
+}
+
 # Support for toptal gitignore generator CLI
 function gi() { 
     curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
