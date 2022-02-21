@@ -38,14 +38,15 @@ light_white=$(tput setaf 15)
 setopt PROMPT_SUBST
 
 prompt_time() {
-    echo $blue"%*" $reset
+    echo %{$blue%}"%*"%{$reset%}
 }
+
 prompt_dir() {
-    echo $bold$magenta%c $reset
+    echo %{$bold$magenta%}%c %{$reset%}
 }
 
 prompt_lvl() {
-    echo $cyan%L $reset
+    echo %{$cyan%}%L %{$reset%}
 }
 
 git_branch_name() {
@@ -63,19 +64,24 @@ prompt_git() {
     if [[ $branch == "" ]];
         then
         :
-    else echo $red$bold"[$branch]" $reset
+    else echo %{$bold$red%}"[$branch] "%{$reset%}
     fi
 }
 
 prompt_symbol() {
-    echo $bold$light_green"→"$reset % 
+    echo %{$bold$green%}"→" %{$reset%}
 }
 
 build_prompt() {
-    echo $(prompt_time)$(prompt_dir)$(prompt_lvl)$(prompt_git)$(prompt_symbol)
+    echo $(prompt_dir)$(prompt_lvl)$(prompt_git)$(prompt_symbol)
+}
+
+build_rprompt() {
+    echo $(prompt_time)
 }
 
 export PROMPT='$(build_prompt)'
+export RPROMPT='$(build_rprompt)'
 
 # Add locations to $PATH variable
 # Add Visual Studio Code (code)
