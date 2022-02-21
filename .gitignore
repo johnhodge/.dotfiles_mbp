@@ -11,3 +11,4 @@ config/iterm2*
 # Test files
 before
 after
+test.zsh
