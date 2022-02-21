@@ -37,6 +37,9 @@ light_white=$(tput setaf 15)
 
 setopt PROMPT_SUBST
 
+prompt_time() {
+    echo $blue"%*" $reset
+}
 prompt_dir() {
     echo $bold$magenta%c $reset
 }
@@ -69,12 +72,10 @@ prompt_symbol() {
 }
 
 build_prompt() {
-    echo $(prompt_dir)$(prompt_lvl)$(prompt_git)$(prompt_symbol)
+    echo $(prompt_time)$(prompt_dir)$(prompt_lvl)$(prompt_git)$(prompt_symbol)
 }
 
 export PROMPT='$(build_prompt)'
-
-RPROMPT='%*'
 
 # Add locations to $PATH variable
 # Add Visual Studio Code (code)
