@@ -1,6 +1,12 @@
 #!/usr/bin/env zsh
+light_magenta=$(tput setaf 13)
+cyan=$(tput setaf 6)
+bold=$(tput bold)
+reset=$(tput sgr0)
 
-echo "\n############\nStarting homebrew setup\n############\n"
+echo "${cyan}\n############
+${light_magenta}${bold}Starting homebrew setup
+${reset}${cyan}############$reset\n"
 
 if exists brew; then
     echo "Brew exists, skipping install"

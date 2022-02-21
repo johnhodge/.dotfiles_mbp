@@ -1,4 +1,12 @@
-echo "\n############\nStarting macOS setup\n############\n"
+#!/usr/bin/env zsh
+light_magenta=$(tput setaf 13)
+cyan=$(tput setaf 6)
+bold=$(tput bold)
+reset=$(tput sgr0)
+
+echo "${cyan}\n############
+${light_magenta}${bold}Starting macOS setup
+${reset}${cyan}############$reset\n"
 
 # Some stuff was taken from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos

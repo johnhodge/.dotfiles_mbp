@@ -15,19 +15,34 @@ alias python='python3'
 alias pip='pip3'
 
 # Customize prompt(s)
-COLOR_DEF='%f'
-COLOR_DIR='%F{216}'
-COLOR_LVL='%F{6}'
-COLOR_GIT='%F{75}'
-COLOR_SYMBOL='%F{87}'
+bold=$(tput bold)
+reset=$(tput sgr0)
+
+black=$(tput setaf 0)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+blue=$(tput setaf 4)
+magenta=$(tput setaf 5)
+cyan=$(tput setaf 6)
+white=$(tput setaf 7)
+light_black=$(tput setaf 8)
+light_red=$(tput setaf 9)
+light_green=$(tput setaf 10)
+light_yellow=$(tput setaf 11)
+light_blue=$(tput setaf 12)
+light_magenta=$(tput setaf 13)
+light_cyan=$(tput setaf 14)
+light_white=$(tput setaf 15)
+
 setopt PROMPT_SUBST
 
 prompt_dir() {
-    echo $COLOR_DIR%c ' '
+    echo $bold$magenta%c $reset
 }
 
 prompt_lvl() {
-    echo $COLOR_LVL%L ' '
+    echo $cyan%L $reset
 }
 
 git_branch_name() {
@@ -45,12 +60,12 @@ prompt_git() {
     if [[ $branch == "" ]];
         then
         :
-    else echo $COLOR_GIT%B"[$branch]" %b
+    else echo $red$bold"[$branch]" $reset
     fi
 }
 
 prompt_symbol() {
-    echo %B$COLOR_SYMBOL→%b $COLOR_DEF% 
+    echo $bold$light_green"→"$reset % 
 }
 
 build_prompt() {

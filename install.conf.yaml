@@ -24,9 +24,9 @@
     - command: ./setup_zsh.zsh
       stdout: true
       stderr: true
-    - command: ./setup_macos.zsh
+    - command: ./setup_utils.zsh
       stdout: true
       stderr: true
-    - command: ./setup_utils.zsh
+    - command: ./setup_macos.zsh
       stdout: true
       stderr: true

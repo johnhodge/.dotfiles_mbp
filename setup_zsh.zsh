@@ -1,6 +1,12 @@
 #!/usr/bin/env zsh
+light_magenta=$(tput setaf 13)
+cyan=$(tput setaf 6)
+bold=$(tput bold)
+reset=$(tput sgr0)
 
-echo "\n############\nStarting zsh setup\n############\n"
+echo "${cyan}\n############
+${light_magenta}${bold}Starting zsh setup
+${reset}${cyan}############$reset\n"
 
 # https://stackoverflow.com/a/4749368/1341838
 if grep -Fxq '/usr/local/bin/zsh' '/etc/shells'; then
