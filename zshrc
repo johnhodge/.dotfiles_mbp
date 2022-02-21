@@ -46,7 +46,7 @@ prompt_dir() {
 }
 
 prompt_lvl() {
-    echo %{$cyan%}%L %{$reset%}
+    echo %{$blue%}%L %{$reset%}
 }
 
 git_branch_name() {
