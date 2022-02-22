@@ -63,12 +63,15 @@ prompt_git() {
     if [[ $branch == "" ]]; then
         :
     else 
-        if [[ `git status --porcelain` ]]; then
+        if [[ `git status --porcelain --untracked-files=no` ]]; then
                 echo %{$bold$yellow%}"[$branch] "%{$reset%}
         else
-                echo %{$bold$green%}"[$branch] "%{$reset%}
+            if [[ `git status --porcelain --untracked-files=normal` ]]; then
+                echo %{$bold$blue%}"[$branch] "%{$reset%}
+        else
+            echo %{$bold$green%}"[$branch] "%{$reset%}
+            fi
         fi
-
     fi
 }
 
@@ -119,16 +122,14 @@ function gi() {
 # Create repo and add gitignore file
 function grc() {
 inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
-    if [ "$inside_git_repo" ]
-        then
+    if [[ "$inside_git_repo" ]]; then
             echo "Git initialized."
         else
             echo "Initializing git..."
             git init
     fi
     echo "Creating repo..."
-    if [ "$1" != "" ]
-        then
+    if [[ "$1" != "" ]]; then
             gh repo create --source=. --private
             echo "Generating .gitignore template for visualstudiocode,macos,$1." 
             gi visualstudiocode,macos,"$1" >> .gitignore 
@@ -140,16 +141,15 @@ inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
 }
 
 
-function gitall() {
-    git add .
-    if [ "$1" != "" ]
-    then
-        git commit -m "$1"
-    else
-        git commit -m update # default commit message is `update`
-    fi # closing statement of if-else block
-    git push origin HEAD
-}
+# function gitall() {
+#     git add .
+#     if [[ "$1" != "" ]]; then
+#         git commit -m "$1"
+#     else
+#         git commit -m update # default commit message is `update`
+#     fi # closing statement of if-else block
+#     git push origin HEAD
+# }
 
 # Use ZSH plugins
 plugins=(autopep8,brew,dotenv,gatsby,gcloud,gh)
