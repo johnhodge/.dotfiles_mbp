@@ -26,14 +26,14 @@ blue=$(tput setaf 4)
 magenta=$(tput setaf 5)
 cyan=$(tput setaf 6)
 white=$(tput setaf 7)
-light_black=$(tput setaf 8)
-light_red=$(tput setaf 9)
-light_green=$(tput setaf 10)
-light_yellow=$(tput setaf 11)
-light_blue=$(tput setaf 12)
-light_magenta=$(tput setaf 13)
-light_cyan=$(tput setaf 14)
-light_white=$(tput setaf 15)
+bright_black=$(tput setaf 8)
+bright_red=$(tput setaf 9)
+bright_green=$(tput setaf 10)
+bright_yellow=$(tput setaf 11)
+bright_blue=$(tput setaf 12)
+bright_magenta=$(tput setaf 13)
+bright_cyan=$(tput setaf 14)
+bright_white=$(tput setaf 15)
 
 setopt PROMPT_SUBST
 
@@ -46,7 +46,7 @@ prompt_dir() {
 }
 
 prompt_lvl() {
-    echo %{$white%}%L %{$reset%}
+    echo %{$bright_black%}%L %{$reset%}
 }
 
 git_branch_name() {
