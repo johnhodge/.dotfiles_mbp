@@ -46,13 +46,12 @@ prompt_dir() {
 }
 
 prompt_lvl() {
-    echo %{$blue%}%L %{$reset%}
+    echo %{$white%}%L %{$reset%}
 }
 
 git_branch_name() {
   branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
-  if [[ $branch == "" ]];
-  then
+  if [[ $branch == "" ]]; then
     :
   else
     echo '- ('$branch')'
@@ -61,15 +60,20 @@ git_branch_name() {
 
 prompt_git() {
     branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
-    if [[ $branch == "" ]];
-        then
+    if [[ $branch == "" ]]; then
         :
-    else echo %{$bold$red%}"[$branch] "%{$reset%}
+    else 
+        if [[ `git status --porcelain` ]]; then
+                echo %{$bold$yellow%}"[$branch] "%{$reset%}
+        else
+                echo %{$bold$green%}"[$branch] "%{$reset%}
+        fi
+
     fi
 }
 
 prompt_symbol() {
-    echo %{$bold$green%}"→" %{$reset%}
+    echo %{$bold$cyan%}"→" %{$reset%}
 }
 
 build_prompt() {
