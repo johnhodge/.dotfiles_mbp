@@ -79,8 +79,18 @@ prompt_symbol() {
     echo %{$bold$cyan%}"→" %{$reset%}
 }
 
+prompt_virtualenv() {
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        venv="${VIRTUAL_ENV##*/}"
+    else
+        venv=''
+    fi
+    [[ -n "$venv" ]] && echo %{$bold$cyan%}"[$venv]" %{$reset%}
+}
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 build_prompt() {
-    echo $(prompt_dir)$(prompt_lvl)$(prompt_git)$(prompt_symbol)
+    echo $(prompt_virtualenv)$(prompt_dir)$(prompt_lvl)$(prompt_git)$(prompt_symbol)
 }
 
 build_rprompt() {
