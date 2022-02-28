@@ -85,7 +85,7 @@ prompt_virtualenv() {
     else
         venv=''
     fi
-    [[ -n "$venv" ]] && echo %{$bold$cyan%}"[$venv]" %{$reset%}
+    [[ -n "$venv" ]] && echo %{$bold$white%}"[$venv]" %{$reset%}
 }
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
