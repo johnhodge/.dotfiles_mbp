@@ -15,7 +15,7 @@ ${reset}${cyan}############$reset\n"
 # ====
 
 # Set screenshot folder
-defaults write com.apple.screencapture location -string ~/SynologyDrive/John/MBP/Pictures/Screenshots   
+# defaults write com.apple.screencapture location -string ~/MBP_Hodge/John/MBP/Pictures/Screenshots   
 
 # Set default browser to chrome
 open -a "Google Chrome" --args --make-default-browser
