@@ -381,7 +381,7 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
 
 # Visualize CPU history in the Activity Monitor Dock icon
-defaults write com.apple.ActivityMonitor IconType -int 3
+defaults write com.apple.ActivityMonitor IconType -int 6
 
 # Show all processes in Activity Monitor
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
