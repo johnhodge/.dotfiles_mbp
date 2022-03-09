@@ -70,6 +70,8 @@ cask "google-cloud-sdk"
 cask "google-trends"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# App to write, plan, collaborate, and get organized
+cask "notion"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Collaboration platform for API development
@@ -88,4 +90,3 @@ mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
-mas "Time Out", id: 402592703
