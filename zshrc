@@ -101,6 +101,9 @@ export PROMPT='$(build_prompt)'
 export RPROMPT='$(build_rprompt)'
 
 # Add locations to $PATH variable
+# Add Home-brew
+export PATH="$PATH:/opt/homebrew/bin/brew"
+
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
