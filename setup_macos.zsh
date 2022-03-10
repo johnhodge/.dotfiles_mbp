@@ -17,9 +17,6 @@ ${reset}${cyan}############$reset\n"
 # Set screenshot folder
 # defaults write com.apple.screencapture location -string ~/MBP_Hodge/John/MBP/Pictures/Screenshots   
 
-# Set default browser to chrome
-open -a "Google Chrome" --args --make-default-browser
-
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
@@ -80,7 +77,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode T
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write com.apple.AppleMultitouchTrackpad Clicking 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 
 ###############################################################################
 # Energy saving                                                               #
@@ -466,3 +463,6 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 
 # Enable swap back.
 # sudo launchctl load -wF /System/Library/LaunchDaemons/com.apple.dynamic_pager.plist
+
+# Set default browser to chrome
+open -a "Google Chrome" --args --make-default-browser
