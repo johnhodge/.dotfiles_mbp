@@ -13,6 +13,11 @@ if exists brew; then
 else
     echo "Brew doesn't exist, continuing with install:"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    
+    if [[ $(arch) == 'arm64' ]]; then
+        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' > zprofile && ln -s ${PWD}/zprofile ~/.zprofile
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    fi
 fi
 
 brew bundle --verbose
