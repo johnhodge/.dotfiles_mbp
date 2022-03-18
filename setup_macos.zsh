@@ -79,6 +79,9 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 
+# Trackpad: enable swipe between pages
+defaults write "Apple Global Domain" AppleEnableSwipeNavigateWithScrolls -int 0
+
 ###############################################################################
 # Energy saving                                                               #
 ###############################################################################
