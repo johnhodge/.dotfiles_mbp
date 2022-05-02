@@ -5,7 +5,7 @@ config/configstore*
 config/gatsby/*
 config/gcloud/*
 config/iterm2/*
-config/gh/*
+config/gh/hosts.yml
 
 # Mac files
 .DS_Store

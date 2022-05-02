@@ -8,6 +8,7 @@
     ~/.zshrc:
     ~/.zshenv:
     ~/.gitconfig:
+    ~/.config/gh/config.yml:
     ~/.config/gatsby:
       create: true
       path: config
