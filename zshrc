@@ -107,6 +107,9 @@ export PATH="$PATH:/opt/homebrew/bin/brew"
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Add Python 10
+export PATH="/opt/homebrew/opt/python@3.10/bin:$PATH"
+
 # Add GoLang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
@@ -152,17 +155,6 @@ inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
             gi visualstudiocode,macos >> .gitignore  
     fi
 }
-
-
-# function gitall() {
-#     git add .
-#     if [[ "$1" != "" ]]; then
-#         git commit -m "$1"
-#     else
-#         git commit -m update # default commit message is `update`
-#     fi # closing statement of if-else block
-#     git push origin HEAD
-# }
 
 # Use ZSH plugins
 plugins=(autopep8,brew,dotenv,gatsby,gcloud,gh)
