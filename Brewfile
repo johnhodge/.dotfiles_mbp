@@ -27,6 +27,8 @@ brew "grafana", restart_service: true
 brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Network authentication protocol
+brew "krb5"
 # Pager program similar to more
 brew "less"
 # Mac App Store command-line interface
@@ -43,6 +45,8 @@ brew "nghttp2"
 brew "postgresql", restart_service: true
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
