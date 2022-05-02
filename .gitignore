@@ -2,8 +2,10 @@
 
 # Config files
 config/configstore*
-config/gatsby*
-config/iterm2*
+config/gatsby/*
+config/gcloud/*
+config/iterm2/*
+config/gh/*
 
 # Mac files
 .DS_Store
