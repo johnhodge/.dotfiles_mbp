@@ -84,6 +84,7 @@ cask "postman"
 cask "rar"
 # Team communication and collaboration software
 cask "slack"
+cask "thinkorswim"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
