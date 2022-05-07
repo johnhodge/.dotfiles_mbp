@@ -110,6 +110,9 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # Add Python 10
 export PATH="/opt/homebrew/opt/python@3.10/bin:$PATH"
 
+# Add Geckodriver
+export PATH="$PATH:/opt/homebrew/bin/geckodriver"
+
 # Add GoLang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec

@@ -17,6 +17,8 @@ brew "duti"
 brew "exa"
 # Gatsby command-line interface
 brew "gatsby-cli"
+# WebDriver <-> Marionette proxy
+brew "geckodriver"
 # GitHub command-line tool
 brew "gh"
 # Open source programming language to build simple/reliable/efficient software
@@ -67,6 +69,8 @@ cask "authy"
 cask "charles"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Web browser
+cask "firefox"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
