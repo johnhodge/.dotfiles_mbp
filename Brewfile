@@ -69,6 +69,8 @@ cask "authy"
 cask "charles"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Collaborative team software
+cask "figma"
 # Web browser
 cask "firefox"
 # Web browser
