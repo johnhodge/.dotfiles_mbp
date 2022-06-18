@@ -94,7 +94,7 @@ cask "thinkorswim"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
-cask "zoom"
+cask "zoom-for-it-admins"
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
