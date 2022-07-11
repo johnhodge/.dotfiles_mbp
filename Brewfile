@@ -91,6 +91,8 @@ cask "rar"
 # Team communication and collaboration software
 cask "slack"
 cask "thinkorswim"
+# Web browser focusing on security
+cask "tor-browser"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
