@@ -35,6 +35,8 @@ brew "krb5"
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# MongoDB Shell to connect, configure, query, and work with your MongoDB database
+brew "mongosh"
 # Open source relational database management system
 brew "mysql"
 # Free (GNU) replacement for the Pico text editor
@@ -80,6 +82,8 @@ cask "google-cloud-sdk"
 cask "google-trends"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Explore and manipulate your MongoDB data
+cask "mongodb-compass"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Administration and development platform for PostgreSQL
