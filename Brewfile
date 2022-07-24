@@ -41,6 +41,8 @@ brew "mongosh"
 brew "mysql"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Netlify command-line tool
 brew "netlify-cli"
 # HTTP/2 C Library
